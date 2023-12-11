@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+<form action="/skills" method="POST" autocomplete="off">
+    <input type="text" name="skill"><br>
+    <label>
+        Level: 
+        <input type="radio" name="level" value="Beginner">Beginner
+        <input type="radio" name="level" value="Intermediate">Intermediate
+        <input type="radio" name="level" value="Advanced">Advanced
+    </label><br>
+    <button type="submit">Save Skill</button>
+</form>
+<%- include('../partials/footer') %>
