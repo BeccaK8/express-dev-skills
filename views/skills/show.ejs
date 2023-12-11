@@ -8,15 +8,10 @@
 </head>
 <body>
     <a href="/">Home</a>
-    <h1>Developer Skills</h1>
-    <ul>
-        <% skills.forEach(function(s) { %>
-            <li>
-                <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-                - 
-                <%= s.level %>
-            </li>
-        <% }); %>
-    </ul>
+    |
+    <a href="/skills">Skills List</a>
+    <h1>Developer Skill</h1>
+    <h3><%= skill.skill %></h3>
+    <h3>Level: <%= skill.level %></h3>
 </body>
 </html>
