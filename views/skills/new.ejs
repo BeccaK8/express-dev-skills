@@ -1,12 +1,20 @@
 <%- include('../partials/header') %>
 <form action="/skills" method="POST" autocomplete="off">
-    <input type="text" name="skill"><br>
-    <label>
-        Level: 
-        <input type="radio" name="level" value="Beginner" class="level">Beginner
-        <input type="radio" name="level" value="Intermediate" class="level">Intermediate
-        <input type="radio" name="level" value="Advanced" class="level">Advanced
-    </label><br>
+    <input type="text" name="skill" required><br>
+    Level: 
+    <label class="radio-label">
+        <input type="radio" name="level" value="Beginner" class="radio" required>
+        Beginner
+    </label>
+    <label class="radio-label">
+        <input type="radio" name="level" value="Intermediate" class="radio">
+        Intermediate
+    </label>
+    <label class="radio-label">
+        <input type="radio" name="level" value="Advanced" class="radio">
+        Advanced
+    </label>
+    <br>
     <button type="submit">Save Skill</button>
 </form>
 <%- include('../partials/footer') %>

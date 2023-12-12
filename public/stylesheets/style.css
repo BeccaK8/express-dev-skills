@@ -13,8 +13,23 @@ input[type=text] {
   box-sizing: border-box;
 }
 
-.level {
-  
+.radio {
+  height: 1em;
+  aspect-ratio: 1;
+  border: 0.125em solid #939393;
+  padding: 0.125em;
+  background: radial-gradient(farthest-side, #00B7FF 94%, #0000) 50%/0 0 no-repeat content-box;
+  border-radius: 50%;
+  outline-offset: 0.1em;
+  appearance: none;
+  cursor: pointer;
+  font-size: inherit;
+  transition: .3s;
+}
+
+.radio:checked {
+  border-color: #00B7FF;
+  background-size: 100% 100%;
 }
 
 button {
