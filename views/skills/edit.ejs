@@ -3,9 +3,9 @@
     <input type="text" name="skill" value="<%= skill.skill %>"><br>
     <label>
         Level: 
-        <input type="radio" name="level" value="Beginner" <%= skill.level === 'Beginner' ? 'checked' : '' %>>Beginner
-        <input type="radio" name="level" value="Intermediate" <%= skill.level === 'Intermediate' ? 'checked' : '' %>>Intermediate
-        <input type="radio" name="level" value="Advanced" <%= skill.level === 'Advanced' ? 'checked' : '' %>>Advanced
+        <input type="radio" name="level" value="Beginner" class="level" <%= skill.level === 'Beginner' ? 'checked' : '' %>>Beginner
+        <input type="radio" name="level" value="Intermediate" class="level" <%= skill.level === 'Intermediate' ? 'checked' : '' %>>Intermediate
+        <input type="radio" name="level" value="Advanced" class="level" <%= skill.level === 'Advanced' ? 'checked' : '' %>>Advanced
     </label><br>
     <button type="submit">Edit Skill</button>
 </form>
